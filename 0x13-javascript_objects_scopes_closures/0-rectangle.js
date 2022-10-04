@@ -1,5 +1,4 @@
-t Rectangle = require('./0-rectangle'); 
+#!/usr/bin/node
+// Write an empty class Rectangle that defines a rectangle. 
 
-const r1 = new Rectangle(); 
-console.log(r1); 
-console.log(r1.constructor);
+module.exports = class Rectangle { };
