@@ -1,7 +1,19 @@
 #!/usr/bin/node 
-const Square = require('./6-square'); 
 
-const s1 = new Square(4); 
-s1.charPrint(); 
+// Print function with custom characters to represent the Square 
 
-s1.charPrint('C');
+const OldSquare = require('./5-square'); 
+
+module.exports = class Square extends OldSquare { 
+	constructor (size) { 
+		super(size, size); 
+	} 
+
+	double () { 
+		super.double(); 
+	}
+
+	charPrint (c = 'X') { 
+		super.print(c); 
+	}
+};
