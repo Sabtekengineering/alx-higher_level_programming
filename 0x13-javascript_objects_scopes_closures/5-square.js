@@ -1,4 +1,7 @@
-t Rectangle = require('./4-rectangle'); 
+#!/usr/bin/node 
+// Creates a Square class that extends Rectangle class 
+
+const Rectangle = require('./4-rectangle'); 
 
 module.exports = class Square extends Rectangle { 
   constructor (size) { 
